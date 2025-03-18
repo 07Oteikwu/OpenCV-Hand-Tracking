@@ -68,3 +68,45 @@ This project combines **real-time hand tracking** using **MediaPipe** and **obje
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/07Oteikwu/OpenCV-Hand-Tracking.git
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   pip install opencv-python mediapipe pygame torch torchvision numpy
+   ```
+
+3. **Run the Program:**
+   ```bash
+   python openCV_project.py
+   ```
+
+---
+
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## 📸 Demo
+[Insert a link to a demo video or GIF here]
+
+---
+
+## 🛠️ Troubleshooting
+
+### Sound Not Playing:
+- Ensure the sound file (`Machine Gun - QuickSounds.com.mp3`) is in the same directory as the script.
+
+### Hand Tracking Issues:
+- Ensure your hand is clearly visible to the camera.
+- Adjust lighting conditions for better detection.
+
+### Object Detection Issues:
+- Ensure the YOLOv5 model is loaded correctly.
+- Adjust the confidence threshold in the script if needed.
+
+---
+
+## 📝 Notes
+The project is designed for educational and entertainment purposes. Feel free to modify and extend the code to suit your needs.
+
