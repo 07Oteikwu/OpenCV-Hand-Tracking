@@ -1,52 +1,110 @@
-## YOLOv5 Real-Time Object Detection & Dynamic Tracking 🔍🎯
+Hand Tracking & Object Detection with YOLOv5 and MediaPipe 🖐️🎯🔊
+This project combines real-time hand tracking using MediaPipe and object detection using YOLOv5 to create an interactive experience. It also integrates sound effects with pygame for a fun and engaging user experience.
 
-This project implements **real-time object detection and tracking** using a pre-trained **YOLOv5 model** via PyTorch. It also integrates sound effects with `pygame` for a fun and interactive experience.
+✨ Features
+🖐️ Hand Tracking:
 
-### ✨ Features
-- **📸 Real-Time Detection:** Utilizes YOLOv5 to detect objects from webcam input with high accuracy.
-- **📍 Dynamic Tracking:** Automatically tracks the selected object even when it moves, using **Intersection over Union (IoU)** calculation.
-- **🖱️ Interactive Interface:**
-  - Click on objects to lock and track them.
-  - Adjust bounding boxes to maintain original size during tracking.
-- **🔊 Audio Integration:**
-  - Plays machine gun sound with `pygame` when triggered.
-  - Continuous looping and easy stopping of sound playback.
-- **⚙️ Configurable Thresholds:** Adjustable confidence threshold for improved detection accuracy.
+Detects and tracks hands in real-time using MediaPipe.
 
-### 💻 Controls
-| Key  | Action                             |
-|------|-----------------------------------|
-| Click| Select object for tracking.       |
-| ESC  | Remove object selection.          |
-| F    | Play machine gun sound.           |
-| S    | Stop sound playback.              |
-| Q    | Quit the program.                 |
+Visualizes hand landmarks and connections.
 
-### 📂 Requirements
-- `torch`
-- `opencv-python`
-- `pygame`
-- `numpy`
+🎯 Object Detection:
 
-### 🚀 How It Works
-1. **Object Detection:** YOLOv5 detects objects in real-time from your webcam feed.
-2. **Object Selection:** Click on any detected object to lock onto it.
-3. **Object Tracking:** The program tracks the object even if it moves, maintaining the original bounding box size.
-4. **Sound Effects:** Trigger machine gun sounds with keyboard interaction.
+Uses YOLOv5 to detect objects in real-time from your webcam feed.
 
-### 📌 Installation & Usage
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Install the required packages:
-   ```bash
-   pip install torch opencv-python pygame numpy
-   ```
-3. Run the program:
-   ```bash
-   python <your_script_name>.py
-   ```
+Click on objects to lock and track them dynamically.
 
+🔊 Sound Integration:
 
+Plays a machine gun sound when all five fingers are raised.
 
+Stops the sound when fingers are lowered.
+
+🖱️ Interactive Interface:
+
+Click on objects to select and track them.
+
+Press F to play the sound, S to stop it, and Q to quit.
+
+💻 Controls
+Key	Action
+Click	Select object for tracking.
+ESC	Remove object selection.
+F	Play machine gun sound.
+S	Stop sound playback.
+Q	Quit the program.
+📂 Requirements
+Python 3.x
+
+opencv-python
+
+mediapipe
+
+pygame
+
+torch (for YOLOv5)
+
+numpy
+
+🚀 How It Works
+Hand Tracking:
+
+MediaPipe detects and tracks hands in real-time.
+
+Raises all five fingers to trigger the machine gun sound.
+
+Object Detection:
+
+YOLOv5 detects objects in the webcam feed.
+
+Click on an object to lock and track it.
+
+Sound Integration:
+
+Plays a looping machine gun sound when all fingers are raised.
+
+Stops the sound when fingers are lowered.
+
+📌 Installation & Usage
+Clone the Repository:
+
+bash
+Copy
+git clone https://github.com/07Oteikwu/OpenCV-Hand-Tracking.git
+Install Dependencies:
+
+bash
+Copy
+pip install opencv-python mediapipe pygame torch torchvision numpy
+Run the Program:
+
+bash
+Copy
+python openCV_project.py
+📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+📸 Demo
+[Insert a link to a demo video or GIF here]
+
+🛠️ Troubleshooting
+Sound Not Playing:
+
+Ensure the sound file (Machine Gun - QuickSounds.com.mp3) is in the same directory as the script.
+
+Hand Tracking Issues:
+
+Ensure your hand is clearly visible to the camera.
+
+Adjust lighting conditions for better detection.
+
+Object Detection Issues:
+
+Ensure the YOLOv5 model is loaded correctly.
+
+Adjust the confidence threshold in the script if needed.
+
+📝 Notes
+The project is designed for educational and entertainment purposes.
+
+Feel free to modify and extend the code to suit your needs
