@@ -1,7 +1,7 @@
 # Hand Tracking & Object Detection with YOLOv5 and MediaPipe 🖐️🎯🔊
 This project combines real-time hand tracking using MediaPipe and object detection using YOLOv5 to create an interactive experience. It also integrates sound effects with pygame for a fun and engaging user experience.
 
-✨ Features
+## ✨ Features
 🖐️ Hand Tracking:
 
 Detects and tracks hands in real-time using MediaPipe.
