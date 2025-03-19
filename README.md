@@ -88,7 +88,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 
 ## 📸 Demo
-[Insert a link to a demo video or GIF here]
+[https://drive.google.com/file/d/1pa0SUIbyREkdHSs3S7yhwQlyrQACtnFv/view?usp=sharing]
 
 ---
 
